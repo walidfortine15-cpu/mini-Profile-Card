@@ -1,73 +1,71 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil de Abdo</title>
+    <title>Our Team | Mini Profile Card</title>
     <link rel="stylesheet" href="CSS/style.css">
 
 </head>
 
 <body>
+    <!-- Team name, project title, and page controls. -->
     <header>
       
-<img 
-    src="images/profil.jpg"
-    alt="Photo de profil de Abdelghafour Zhouri"
-    class="profile-image"
->
+        <div class="team-badge" role="img" aria-label="Team of six students">6</div>
        
        
-        <h1 id="mainTitle">Abdelghafour Zhouri</h1>
-        <button id="themeBtn">Mode sombre</button>
-        <p id="tagline">Data scientist</p>
-        <button id="changeTitleBtn">Changer le titre</button>
+        <h1 id="mainTitle">Our Team</h1>
+        <button id="themeBtn">Dark mode</button>
+        <p id="tagline">Mini Profile Card · 6 students</p>
+        <button id="changeTitleBtn">Change title</button>
 
        
     </header>
     <main>
+        <!-- Introduce the project and explain the team's task split. -->
         <section>
-            <h2>À propos</h2>
-            <p>Je suis Abdelghafour Zhouri, un étudiant en licence data science à la Faculté des Sciences d'El Jadida
-                (Université Chouaïb Doukkali).</p>
+            <h2>About the Project</h2>
+            <p>We are six students working together to build a mini profile card with HTML, CSS, and JavaScript.</p>
         </section>
         <section>
-            <h2>Compétences</h2>
+            <h2>Team Roles</h2>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Git</li>
+                <li><strong>3 students:</strong> Git and GitHub for version control and collaboration.</li>
+                <li><strong>3 students:</strong> JavaScript and the DOM for building interactions.</li>
             </ul>
         </section>
         <section>
             <h2>Contact</h2>
+            <!-- The form message shows a response after submission. -->
             <form id="contactForm">
-                <label for="nameInput">Nom</label>
+                <label for="nameInput">Name</label>
                 <input id="nameInput" type="text" name="nameInput" required>
                 <label for="emailInput">Email</label>
                 <input id="emailInput" type="email" name="emailInput" required>
                 <label for="messageInput">Message</label>
                 <textarea id="messageInput" name="messageInput" required></textarea>
-                <button type="submit">Envoyer</button>
+                <button type="submit">Send</button>
                 <p id="formMessage"></p>
             </form>
         </section>
+        <!-- These elements can be updated by JavaScript through their IDs. -->
         <section>
-            <h2>Personnalisez votre carte</h2>
-            <label for="liveInput">Votre nom</label>
+            <h2>Customize the Card</h2>
+            <label for="liveInput">Name to display</label>
             <input id="liveInput" type="text">
             <p id="liveText"></p>
         </section>
+        <!-- The button and value are used for the like counter. -->
         <section>
-            <h2>Compteur</h2>
+            <h2>Like Counter</h2>
             <button id="counterBtn">Like</button>
             <span id="counterValue">0</span>
         </section>
 
     </main>
+    <!-- Load the script for page interactions. -->
     <script src="JS/script.js"></script>
 </body>
 
