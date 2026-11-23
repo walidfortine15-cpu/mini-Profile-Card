@@ -10,16 +10,23 @@
 
 <body>
     <header>
-        <h1 id="mainTitle">Abdelghafour Zhouri</h1>
         <button id="themeBtn">Mode sombre</button>
+        <img src="images/profile.png" alt="Photo de profil par défaut">
+        <div class="titleRow">
+            <h1 id="mainTitle">Abdelghafour Zhouri</h1>
+            <button id="counterBtn">Like</button>
+            <span id="counterValue">0</span>
+        </div>
         <p id="tagline">Data scientist</p>
         <button id="changeTitleBtn">Changer le titre</button>
     </header>
     <main>
         <section>
             <h2>À propos</h2>
-            <p>Je suis Abdelghafour Zhouri, un étudiant en licence data science à la Faculté des Sciences d'El Jadida
+            <p>Je suis <span id="aboutName">Abdelghafour Zhouri</span>, un étudiant en licence data science à la Faculté
+                des Sciences d'El Jadida
                 (Université Chouaïb Doukkali).</p>
+            <p>Slogan préféré : <span id="sloganValue">Abduuuz</span></p>
         </section>
         <section>
             <h2>Compétences</h2>
@@ -32,8 +39,16 @@
             </ul>
         </section>
         <section>
+            <h2>Loisirs</h2>
+            <ul id="hobbyList">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section>
             <h2>Contact</h2>
-            <form id="contactForm">
+            <form id="contactForm" novalidate>
                 <label for="nameInput">Nom</label>
                 <input id="nameInput" type="text" name="nameInput" required>
                 <label for="emailInput">Email</label>
@@ -46,16 +61,11 @@
         </section>
         <section>
             <h2>Personnalisez votre carte</h2>
-            <label for="liveInput">Votre nom</label>
-            <input id="liveInput" type="text">
-            <p id="liveText"></p>
+            <label for="sloganInput">Votre slogan</label>
+            <input id="sloganInput" type="text">
+            <label for="hobbyInput">Vos loisirs (séparés par des virgules)</label>
+            <input id="hobbyInput" type="text" placeholder="foot,lecture,musique">
         </section>
-        <section>
-            <h2>Compteur</h2>
-            <button id="counterBtn">Like</button>
-            <span id="counterValue">0</span>
-        </section>
-
     </main>
     <script src="script.js"></script>
 </body>
