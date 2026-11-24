@@ -10,23 +10,28 @@
 
 <body>
     <header>
+        <div class="banner"></div>
         <button id="themeBtn">Mode sombre</button>
-        <img src="images/profile.png" alt="Photo de profil par défaut">
-        <div class="titleRow">
-            <h1 id="mainTitle">Abdelghafour Zhouri</h1>
-            <button id="counterBtn">Like</button>
-            <span id="counterValue">0</span>
+        <div class="profileRow">
+            <img class="avatar" src="images/profile.png" alt="Photo de profil par défaut">
+            <div class="profileInfo">
+                <h1 id="mainTitle">Abdelghafour Zhouri</h1>
+                <p id="tagline">Data scientist</p>
+                <div class="actions">
+                    <button id="counterBtn">Like</button>
+                    <span id="counterValue">0</span>
+                    <button id="changeTitleBtn">Changer le titre</button>
+                </div>
+            </div>
         </div>
-        <p id="tagline">Data scientist</p>
-        <button id="changeTitleBtn">Changer le titre</button>
     </header>
     <main>
         <section>
             <h2>À propos</h2>
-            <p>Je suis <span id="aboutName">Abdelghafour Zhouri</span>, un étudiant en licence data science à la Faculté
+            <p>Je suis <span id="aboutName">Abdelghafour Zhouri</span>, un(e) étudiant(e) en licence data science à la Faculté
                 des Sciences d'El Jadida
                 (Université Chouaïb Doukkali).</p>
-            <p>Slogan préféré : <span id="sloganValue">Abduuuz</span></p>
+            <p>Slogan préféré(e) : <span id="sloganValue">Abduuuz</span></p>
         </section>
         <section>
             <h2>Compétences</h2>
