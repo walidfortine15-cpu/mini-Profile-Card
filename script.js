@@ -50,3 +50,25 @@ hobbyInput.addEventListener("input", function(){
         hobbyList.appendChild(item);
     }
 });
+const contactForm = document.getElementById("contactForm");
+const nameInput = document.getElementById("nameInput");
+const emailInput = document.getElementById("emailInput");
+const messageInput = document.getElementById("messageInput");
+const formMessage = document.getElementById("formMessage");
+contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    if(nameInput.value.trim()===""){
+        alert("Veuillez entrer votre nom.");
+        return;
+    }
+    if(!emailInput.value.includes("@") || !emailInput.value.includes(".")){
+        alert("L'email doit contenir un @ et .");
+        return;
+    }
+    if(messageInput.value.trim()===""){
+        alert("Veuillez entrer un message valide.");
+        return;
+    }
+    formMessage.textContent = "Merci " + nameInput.value.trim() + "!";
+    contactForm.reset();
+});
