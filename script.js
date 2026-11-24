@@ -34,4 +34,19 @@ counterBtn.addEventListener("click", function(){
         counterBtn.textContent = "Like";
     }
     counterValue.textContent = likes;
-})
+});
+const hobbyInput = document.getElementById("hobbyInput");
+const hobbyList = document.getElementById("hobbyList");
+hobbyInput.addEventListener("input", function(){
+    const hobbys = hobbyInput.value.split(",");
+    hobbyList.textContent="";
+    for(const hobby of hobbys){
+        const cleanHobby = hobby.trim();
+        if(cleanHobby === ""){
+            continue;
+        }
+        const item = document.createElement("li");
+        item.textContent = cleanHobby;
+        hobbyList.appendChild(item);
+    }
+});
