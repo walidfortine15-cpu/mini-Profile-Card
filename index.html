@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil de Abdo</title>
+    <title>Mini Profile Card</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <h1 id="mainTitle">Abdelghafour Zhouri</h1>
-        <button id="themeBtn">Mode sombre</button>
+        <button id="themeBtn">Dark mode</button>
         <p id="tagline">Data scientist</p>
-        <button id="changeTitleBtn">Changer le titre</button>
+        <button id="changeTitleBtn">Change name</button>
     </header>
     <main>
         <section>
-            <h2>À propos</h2>
-            <p>Je suis Abdelghafour Zhouri, un étudiant en licence data science à la Faculté des Sciences d'El Jadida
-                (Université Chouaïb Doukkali).</p>
+            <h2>About</h2>
+            <p>a data science undergraduate student at the Faculty of Sciences of El Jadida
+                (Chouaïb Doukkali University).</p>
         </section>
         <section>
-            <h2>Compétences</h2>
+            <h2>Skills</h2>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -33,25 +33,25 @@
         </section>
         <section>
             <h2>Contact</h2>
-            <form id="contactForm">
-                <label for="nameInput">Nom</label>
+            <form id="contactForm" novalidate>
+                <label for="nameInput">Name</label>
                 <input id="nameInput" type="text" name="nameInput" required>
                 <label for="emailInput">Email</label>
                 <input id="emailInput" type="email" name="emailInput" required>
                 <label for="messageInput">Message</label>
                 <textarea id="messageInput" name="messageInput" required></textarea>
-                <button type="submit">Envoyer</button>
+                <button type="submit">Send</button>
                 <p id="formMessage"></p>
             </form>
         </section>
         <section>
-            <h2>Personnalisez votre carte</h2>
-            <label for="liveInput">Votre nom</label>
+            <h2>Customize your card</h2>
+            <label for="liveInput">Your name</label>
             <input id="liveInput" type="text">
             <p id="liveText"></p>
         </section>
         <section>
-            <h2>Compteur</h2>
+            <h2>Counter</h2>
             <button id="counterBtn">Like</button>
             <span id="counterValue">0</span>
         </section>
