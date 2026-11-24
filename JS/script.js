@@ -17,7 +17,7 @@ const formMessage = document.getElementById("formMessage");
 
 // 2. Change the name: the title AND the "À propos" name get the new name
 changeTitleBtn.addEventListener("click", () => {
-  const newName = liveInput.value.trim();
+  const newName = prompt("Entrez un nouveau nom :");
   if (newName === null || newName.trim() === "") {
     alert("Nom invalide!");
   } else {
